@@ -1,4 +1,4 @@
-package praktikum.sesi1.sesi2;
+package praktikum.sesi2;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class HurufDigit {
 
         //mengambil input
         System.out.print("masukkan sebuah karakter : ");
-        karakter = sacn.nextInt().chartAt(0);
+        karakter = scan.nextInt().chartAt(0);
 
         if ((karakter >='A') && (karakter <='Z')|| (karakter >='a')&& (karakter <='z')){
             System.out.println(karakter + "adlah huruf");

@@ -1,5 +1,5 @@
 // Package dan Import
-package praktikum.sesi1.sesi2;
+package praktikum.sesi2;
 import java.util.Scanner;
 
 public class Quis1 {
