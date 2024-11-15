@@ -1,0 +1,25 @@
+@startuml UseCase_Data_Guru
+actor Admin
+actor Guru
+actor "Kepala Sekolah" as Kepsek
+
+usecase "Input Data Guru" as InputData
+usecase "Verifikasi Data" as VerifyData
+usecase "Rekam Absensi" as Absensi
+usecase "Generate Jadwal" as GenerateSchedule
+usecase "Evaluasi Kinerja" as Evaluasi
+usecase "Approve Izin/Cuti" as Approval
+usecase "Dashboard" as Dashboard
+
+Admin --> InputData
+InputData --> VerifyData
+Kepsek --> VerifyData
+Guru --> Absensi
+Admin --> GenerateSchedule
+Admin --> Evaluasi
+Guru --> Evaluasi
+Guru --> Approval
+Admin --> Approval
+Kepsek --> Evaluasi
+Admin --> Dashboard
+@enduml
