@@ -1,0 +1,14 @@
+@startuml Flowchart_Data_Guru
+start
+:Admin: Input Data Guru;
+:Kepala Sekolah: Verifikasi Data;
+:Sistem: Simpan Data Guru;
+fork
+    :Sistem: Rekam Absensi Guru;
+    :Sistem: Generate Jadwal Mengajar;
+endfork
+:Sistem: Evaluasi Kinerja;
+:Sistem: Approve Izin/Cuti;
+:Sistem: Dashboard & Laporan;
+stop
+@enduml
